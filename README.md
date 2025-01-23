@@ -18,7 +18,7 @@ Make sure you have Python 3.6 or higher installed. You can download Python from 
 ### 2. Install Required Libraries
 Install the required Python libraries by running:
 ```bash
-pip install yt-dlp
+pip install -r requirements.txt
 ```
 
 ### 3. Install FFmpeg
@@ -53,7 +53,6 @@ FFmpeg is required for audio extraction and conversion. Install it as follows:
      ```bash
      pip install -r requirements.txt
      ```
-     If `requirements.txt` is not available, install `yt-dlp` manually as described above.
 
 3. **Run the Script**
    ```bash
@@ -94,6 +93,16 @@ INFO:root:Download completed successfully!
 
 ### Logging
 The script uses Python's built-in `logging` module to provide informative output during execution.
+
+## Dependencies
+Create a `requirements.txt` file in the project directory with the following content:
+```plaintext
+yt-dlp
+```
+Install the dependencies by running:
+```bash
+pip install -r requirements.txt
+```
 
 ## Contributing
 
